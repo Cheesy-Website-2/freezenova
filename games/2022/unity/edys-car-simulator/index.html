@@ -62,32 +62,6 @@
 	</script>
 	
 
-	<script src="/assets/promo/promo.js" async></script>
-	<script type="text/javascript" async>
-		!function(e, t) {
-			var a = e.createElement("script"),
-				m = e.getElementsByTagName("script")[0];
-
-			a.async = 1;
-			a.src = t;
-
-			a.onload = function() {
-				console.log("Dynamic script loaded wg");
-				if (typeof window.syncPromoManager === "function") window.syncPromoManager(false);
-				window.wgLoaded = 1;
-			};
-
-			a.onerror = function() {
-				console.error("Failed to load wg");
-				if (typeof window.syncPromoManager === "function") window.syncPromoManager(true);
-				window.wgLoaded = 2;
-			};
-
-			m.parentNode.insertBefore(a, m);
-		}(document, "https://universal.wgplayer.com/tag/?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search);
-	</script>
-	
-
 	<script>
 	
 	function SubmitLeaderboardScore(newScore)
