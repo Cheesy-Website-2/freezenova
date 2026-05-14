@@ -159,6 +159,14 @@
 	
 		window.gameInstance.SendMessage('GameDistribution', 'ResumeGame');
 	}
+
+// REMOVE OR REPLACE THE OLD "if (!unblockedRedirect())" BLOCK WITH THIS:
+
+// Directly initialize the Unity engine without tracking or domain block checks
+var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json", {
+    onProgress: UnityProgress
+});
+
 	  
 	function FitScreen(){
        var w = 960;
@@ -183,12 +191,13 @@
 	   
     }
 	
-	function OnLoadX()
-    {
-        unblockedOnLoadX(document);
-        
-        FitScreen();
-    }
+// Bypassed the tracking file loader hook completely
+function OnLoadX() {
+    console.log("OnLoadX bypassed tracking injection script safely.");
+    
+    // Safely execute the game window resizing code without crashing
+    FitScreen();
+}
 
     </script>
   </head>
