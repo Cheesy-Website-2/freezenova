@@ -1,4 +1,6 @@
-# FreezeNova S1 — Unblocked Games Site
+# FreezeNova S1 — Unblocked Games Site 
+
+# I am legally required to mention that I just simply made it so I can put it on my main website, and also that there are no ads anymore because I dont want them.
 
 A streamlined version of the FreezeNova unblocked games website, ready for quick deployment. This repository provides a **mini game portal** with minimal setup. Feel free to **fork**, **clone**, or **customize** it to suit your needs.
 
